@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<h2>Background Cover</h2>
+    <h1>FIRST PRGM</h1>
+    <img src="bulb.jpg" height="100px" width="500px">
+<h2> hello</h2>
+
+<p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
+ <form>
+    <label>username</label>
+    <input name="username" type="text">
+    <label>password</label>
+    <input name="password" type="password">
+    <input name="button" type="button">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+create table circlearea(radius number(1),Area number(6,2));
+declare
+	r number(1);
+	pi constant number(3,2):=3.14;
+	area number(6,2);
+  begin
+	r:=&r;
+	area:=pi*r*r;
+	insert into circlearea values(r,area);
+	
+  end;
+/
+	
+select * from circlearea; create table circlearea(radius number(1),Area number(6,2));
+declare
+	r number(1);
+	pi constant number(3,2):=3.14;
+	area number(6,2);
+  begin
+	r:=&r;
+	area:=pi*r*r;
+	insert into circlearea values(r,area);
+	
+  end;
+/
+
+
+
+
+
+
+
+
+
+
+DECLARE
+	r float;
+	area float;
+BEGIN
+	for r in 3 .. 7 loop
+		area := 3.14*r*r;
+		dbms_output.put_line('Area of circle with this radius ' || r || ' : ' || area);
+	end loop;
+END;
+/
+
+
+
+
+
+CREATE TABLE accnt
+(
+acc_no number,
+name varchar(20),
+balance number,
+PRIMARY KEY (acc_no)
+);
+
+INSERT INTO accnt
+values (1,'Aji',500);
+INSERT INTO accnt
+values (2,'Aravind',1000);
+INSERT INTO accnt
+values (3,'Kuber',18000);
+INSERT INTO accnt
+values (4,'Sreehari',15000);
+
+
+
+declare
+ac_no number(5);
+min_bal number(5):=500;
+bal number(5);
+begin
+ac_no:=&ac_no;
+select balance into bal from accnt where acc_no=ac_no;
+if(bal<min_bal) then
+update accnt set balance=balance-100 where acc_no=ac_no;
+bal:=bal-100;
+dbms_output.Put_line('Rs 100 deducted, current balance is:'||bal);
+else
+dbms_output.Put_line('Balance is not less than minimum value');
+end if;
+end;
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE emp
+(
+employee_no number NOT NULL,
+name varchar(20),
+salary number,
+PRIMARY KEY (employee_no)
+);
+
+INSERT INTO emp
+values (101,'Aji',500);
+INSERT INTO emp
+values (102,'Aravind',1000);
+INSERT INTO emp
+values (103,'Kuber',18000);
+INSERT INTO emp
+values (104,'Sreehari',15000);
+
+SELECT * FROM emp;
+
+DECLARE
+	flag number := 0;
+	e_no1 number;
+	e_no number;
+	e_name varchar(20);
+	e_sal number;
+	CURSOR employee is SELECT employee_no,name,salary FROM emp;
+BEGIN
+	e_no1 := &e_no1;
+	OPEN employee;
+	LOOP
+		FETCH employee INTO e_no,e_name,e_sal;
+		if (e_no = e_no1) THEN
+			dbms_output.put_line('Employee record found');
+			dbms_output.put_line('Salary : ' || e_sal);
+			flag := 1;
+		
+		end if;
+	EXIT WHEN flag=1 or employee%notfound;
+	END LOOP;
+	if(flag=0)THEN
+		dbms_output.put_line('Employee not found');
+	end if;
+	
+	CLOSE employee;
+END;
+/
+
+
+
+
+declare
+c number(10);
+
+begin
+update emp set salary=salary+100 where salary<700;
+c:=sql%rowcount;
+dbms_output.put_line('Count is:'||c);
+end;
+/
+
+
+
+
+
+
+
+
+
+
+

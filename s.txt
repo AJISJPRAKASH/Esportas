@@ -1,0 +1,66 @@
+a<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<h2>Background Cover</h2>
+    <h1>FIRST PRGM</h1>
+    <img src="bg.jpg" height="100px" width="500px">
+<h2> hello</h2>
+
+<p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
+ <form>
+    <label>username</label>
+    <input name="username" type="text">
+    <label>password</label>
+    <input name="password" type="password">
+    <input name="button" type="button">
+    </form>
+
+</body>
+</html>
+
+
+ $mysqli->query("DELETE FROM 'event' where event_name='$id'") or die($mysqli->error());
+                                $_SESSION['message']="Record has deleted";
+                                $_SESSION['msg_type']="danger";
+                                  $sql="DELETE FROM `event` WHERE event_name='$id'";
+                                $rs = mysqli_query($con, $sql);
+                                $_SESSION['message']="Record has deleted";
+                                $_SESSION['msg_type']="danger";
+
+
+                                 if (isset($_GET['edit']))
+                            {
+                                $id=$_GET['edit'];
+                                $result=$mysqli->query("SELECT * FROM 'event' WHERE event_name=$id");
+                                if(count($result)==1){
+                                    $row=$result->fetch_array();
+                                    $event_name=$row['event_name'];
+                                    $event_time=$row['event_time'];
+                                }
+
+
+
+
+                                  <?php
+                    $c = mysqli_connect("localhost", "root","", "sports");
+                   if (isset($_GET['edit']))
+                    {
+                        $id=$_GET['edit'];
+                        $result=$mysqli->query("SELECT * FROM 'event' WHERE event_name=$id");
+                        if(count($result)==1){
+                        $row=$result->fetch_array();
+                        $event_name=$row['event_name'];
+                        $event_time=$row['event_time'];
+                    }
+                ?>

@@ -1,0 +1,127 @@
+<html>
+
+<head>
+<style>
+
+
+
+
+.navigat {
+float: right;
+color: white;
+text-align: center;
+padding: 14px 17px;
+word-spacing: 1em;
+font-size: 15px;
+
+}
+.navi  {
+float: middle;
+color: #f2f2f2;
+
+padding: 50px 550px;
+word-spacing: 10px;
+
+
+}
+
+.nav  a{
+float: left;
+
+color: #f2f2f2;
+}
+.intro{
+float: left;
+text-align: justify;
+text-align-last: left;
+padding-top: 100px;
+}
+.login{
+
+float: center;
+padding-top: 100px;
+margin: 0px 50px; 
+margin-left: 300px;
+max-width: 50px;
+cellpadding: 100px;
+padding: 50px 520px;
+padding-left: 200px;
+border-color: white;
+border: solid;
+
+border-right-width: 10px;
+border-bottom-width: 10px;
+
+}
+.username{
+padding: 5px 10px;
+align: right;
+padding-right: 100px;
+}
+.psd{
+padding: 5px 10px;
+align: right;
+padding-right: 100px;
+
+}
+
+.button {
+float: left;
+background: transparent;
+border-style: solid;
+border-width: 2px;
+border-radius:13px;
+padding: 1px 60px;
+border-color: white;
+text-align: center;
+}
+</style>
+<script Type="text/JavaScript" src="checkboxes.js">
+</script>
+</head>
+<body background="https://images4.alphacoders.com/109/thumb-1920-1091715.jpg">
+<section>
+<div class="navigat">
+<a class="home"><b> HOME </b></a>
+<a class="about"><b> ABOUT </b></a>
+<a class="contact"><b> CONTACT </b></a>
+</div>
+<div class="nav">
+<a class="banshee"><b><big> ESPORTAS </big></b></a>
+</div>
+<div class="navi">
+<a class="signin"><b><big><H2><font size="7"> LOGIN </font> </H2></big></b></a>
+</div>
+</section>
+
+<div class="login">
+<blockquote>
+<font color="white">
+
+
+  <form name="log">
+  <label><font size="5">Username:</font></label>
+  <input type="text" class="username" size="10" maxlength="10" name="uname" autocomplete="off"><br>
+  <p>
+  <label><font size="5">Password:</font></label>
+  <input type="password" class="psd" name="pswd" size="10" maxlength="6" autocomplete="off" ><br>
+  </p>
+  <label><font size="5">Choose:</font></label>
+  <select id="choose" name="choose">
+  <option value="participant" selected>Participant</option>
+  <option value="eventcoord">Event Coordinator</option>
+  <option value="deptrep">Department Representative</option>
+  </select>
+  </form>
+ </font> 
+
+<button class="button"><font color="white" size="3" onClick="emptyornot()">Submit</font></button><br>
+
+</blockquote>
+<blockquote>
+<a href="signup.html"><font color="white">CreateNewAccount</font></a>
+</blockquote>
+</div>
+
+</body>
+</html>

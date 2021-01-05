@@ -1,0 +1,241 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="sign.css">
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<script type="text/javascript">
+
+function emptyval()
+{
+	
+	if(document.for.name.value=="")
+	{	
+		alert("Please enter Name");
+	    return;	
+	}
+	
+
+}
+function checkboxlimit(checkgroup, limit){
+	var checkgroup=checkgroup
+	var limit=limit
+	for (var i=0; i<checkgroup.length; i++){
+		checkgroup[i].onclick=function(){
+		var checkedcount=0
+		for (var i=0; i<checkgroup.length; i++)
+			checkedcount+=(checkgroup[i].checked)? 1 : 0
+		if (checkedcount>limit){
+			alert("You can only select a maximum of "+limit+" checkboxes")
+			this.checked=false
+			}
+		}
+	}
+}
+
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+.bg-contact2 {
+  width: 100%;  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.container-contact2 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgba(219,21,99,0.8);
+  background: -webkit-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+  background: -o-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+  background: -moz-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+  background: linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+}
+
+.wrap-contact2 {
+  width: 790px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 72px 55px 90px 55px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<p></p>
+
+<div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
+
+		<div class="container-contact2">
+		 
+			<div class="wrap-contact2">
+			<h2>Registration Form</h2>
+<div class="container">
+  <form  name="form">
+    <div class="row">
+       <label for="fname">Name</label>
+       <div class="col-75">
+        <input type="text" id="fname" name="name" placeholder="Your Name.." class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      
+        <label for="branch">Branch</label>
+      
+      <div class="form-group">
+        <select class="form-control" name="dept">
+            <option value="CSE" name="cse" selected>CSE</option>
+            <option value="ECA" name="ec_A">EC-A</option>
+            <option value="ECB" name="ec_b">EC-B</option>
+            <option value="MECH"name="mech">MECH</option>
+            <option value="PROD"name="prod">PRODUCTION</option>
+            <option value="AUTO"name="auto">AUTO</option>
+            <option value="BT"name="bt">BT</option>
+        </select>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <div class="maxl">
+            <label class="radio inline"> 
+                <input type="radio" name="gender" value="male" checked>
+                <span> Male </span> 
+            </label>
+            <label class="radio inline"> 
+                <input type="radio" name="gender" value="female">
+                <span>Female </span> 
+            </label>
+        </div>
+    </div>
+  </div>
+  
+	
+		<div class="row">
+      <label >Events</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"  name="R100m"> 100 m<br>
+            <input class="form-check-input" type="checkbox"  name="R200m"> 200 m<br>
+            <input class="form-check-input" type="checkbox"  name="R400m"> 400 m<br>
+            <input class="form-check-input" type="checkbox"  name="R3000m"> 3000 m<br>
+            <input class="form-check-input" type="checkbox"  name="R800m"> 800 m<br>
+            <input class="form-check-input" type="checkbox"  name="R1500m"> 1500 m<br>
+            <input class="form-check-input" type="checkbox"  name="Dicuss"> Discuss Throw<br>
+            <input class="form-check-input" type="checkbox"  name="Javelin"> Javelin Throw<br>
+            <input class="form-check-input" type="checkbox"  name="Longjump"> Long Jump<br>
+            <input class="form-check-input" type="checkbox"  name="Highjump"> High Jump<br>
+            <input class="form-check-input" type="checkbox"  name="Shotput"> Shot Put<br>
+        </div>
+      </div>
+		
+		
+      <div class="row">
+       <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit" onclick="emptyval()">
+      </div>
+		
+		
+      </div>
+    </div>
+    
+   
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+
+<script Type="text/JavaScript">
+checkboxlimit(document.for.ev, 3)
+</script>
+</body>
+</html>
