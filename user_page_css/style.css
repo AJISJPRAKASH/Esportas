@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    height: 100vh;
+    background-color: rgb(233, 235, 213);
+}
+.navbar-style
+{
+    box-shadow: 0 5px 10px #cfa0a0 ;
+}
+.logo
+{
+    height:48px;
+    padding: 2px 2px;
+}
+.logoname{
+    padding 10px 10px;
+    font-family: 'Arizonia';font-size: 22px;
+}
+.icon-bar{
+    background: rgb(194, 114, 16);
+}
+.btn-group{
+    
+    padding: 5px 2px;
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<head>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="h2.css">
+</head>
+<body>
+ 
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h3 class="logoname ">E<span class="logoname">SPORTAS</span></h3>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars mfa-white"></span>
+            </button>
+
+            <div id="main">
+                <a href="javascript:void(0)" class="openNav"><span class="fa fa-bars" onclick="openNav()"></span></a>
+            </div>
+
+         
+           
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <ul class="mob-ul">
+             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+             <li class="nav-item"><a class="nav-link" href="about.php">About US</a></li>
+             
+             <li class="nav-item"><a class="nav-link" href="eventschedule.php">Event Schedule</a></li>
+             <li class="nav-item"><a class="nav-link" href="pointtable.php">Point table</a></li>
+             <li class="nav-item"><a class="nav-link" href="registration.php">EventRegistration</a></li>
+             <li class="nav-item"><a class="nav-link" href="certificate.php">Certificate</a></li>
+             <li class="nav-item"><a class="nav-link" href="map.php">Map</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">contact </a></li>
+             <li class="nav-item"><a class="nav-link" href="index.php">Logout</a></li>
+             
+             
+          </ul>
+        </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <form class="form-inline my-2 my-lg-0 col-md-7">
+                    <input class="myform-control mr-sm-2" type="search" placeholder="search." aria-label="Search">
+                    <button class="btn btn-light"><i class="fa fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-link">
+                        <a class="btn btn-primary btn-block btn-register" href="#">EventRegistration</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="btn btn-primary btn-block btn-login" href="index.php">logout</a>
+                    </li>
+                    
+                   
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <header class="masthead text-white ">
+        <div class="overlay"></div>
+        <div class="container slider-top-text">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="my-heading">WELCOME TO E<span class=" logoname">SPORTAS</span></h3>
+                    <p class="myp-slider text-center logoname">movement of soul sctians</p>
+                    <p class="myp text-center">SHARE YOUR MEMORIES   |   CONNECT WITH SCTIANS   |   MAKE NEW FRIENDS</p>
+                   
+
+                </div>
+                <div class="col-md-12 text-center mt-5">
+                    <div class="scroll-down">
+                        <a class="btn btn-default btn-scroll floating-arrow" href="#gobottom" id="bottom"><i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="testimonials" id="gobottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="big-img">
+                        <img src="stadium.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="inner-section wow fadeInUp">
+                        <h3>Follow the <span class="bg-main">Next Event</span></h3>
+                        <br>
+                        <p class="text-justify"><blockquote>You dream. You plan. You reach. There will be obstacles. There will be doubters. There will be mistakes. But with hard work, with belief, with confidence and trust in yourself and those around you, there are no limits.</blockquote> – Dean Karnazes.</p>
+
+                        <div class="linear-grid">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3 mb-2 wow bounceInUp" data-wow-duration="1.4s" >
+                                    <img src="running.jpg" class="img-thumbnail">
+                                </div>
+                                <div class=" col-sm-6 col-md-3 mb-2 wow bounceInUp" data-wow-duration="1.4s">
+                                    <img src="longjump.jpg" class="img-thumbnail">
+                                </div>
+                                <div class="col-sm-6 col-md-3 mb-2 wow bounceInUp" data-wow-duration="1.4s">
+                                    <img src="high jump.webp" class="img-thumbnail">
+                                </div>
+                                <div class="col-sm-6 col-md-3 mb-2 wow bounceInUp" data-wow-duration="1.4s">
+                                    <img src="disc.jpg" class="img-thumbnail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+   
+
+    <section class="testimonials text-center mybg-music">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp">
+                    <h3 class="title-heading text-center font-weight-bold"> LATEST PHOTOS</h3>
+                    <p class="myp text-center">"The best thing about a picture is that it never changes, even when the people in it do.”.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="12.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="11.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="10.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="9.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="1.png" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="1.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="2.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="3.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="4.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="5.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="6.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="7.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mt-4 gal-item wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="music-gal item box">
+                        <a href="" class="fancybox" rel="ligthbox">
+                        <img class="img-fluid" src="8.jpg">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="testimonials text-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto wow fadeInUp">
+                    <h3 class="text-center font-weight-bold"><span class="bg-main">POINT TABLE</h3></span> 
+                    <p class=" text-center"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-6 mt-4 wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="big-img-3">
+                        <img src="pointable.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-6 mt-4">
+                    <div class="my-right-text wow fadeInUp">
+
+                        <p class="text-justify font-italic">Obstacles don't have to stop you.
+                            If you run into a wall,don't turn around and give up.
+                            Figure out how to climb it,go through it , or work around it.
+                                                          </p>
+
+                        <a href="#" class="link-color">-Michael Jordan</a>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+<footer class="page-footer  font-small blue-grey bg-secondary" id="footer">
+
+  
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fa fa-google-plus  white-text aria-hidden="true" "></i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fa fa-linkedin-square aria-hidden="true" mr-50"></i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5 ">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold logoname">ESPORTAS</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Pratice more and spent less for <br> registration 
+          .</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Services</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">Bootstrap</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Javascript</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">XAMPP</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">Your Account</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">About</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="">Sct</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fa fa-home" aria-hidden="true"></i> SCTCE, Pappanamcode, TVM</p>
+        <p>
+          <i class="fa fa-envelope-square" aria-hidden="true"></i> Esportas@gmail.com</p>
+        <p>
+          <i class="fa fa-mobile" aria-hidden="true"></i> +91 7902264475</p>
+        <p>
+          <i class="fa fa-print" aria-hidden="true"></i> 120304567</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text logoname" href="#"> ESportas</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+     <script>
+              new WOW().init();
+              </script>
+    <script>
+        $(window).scroll( function(){
+
+ 
+          var topWindow = $(window).scrollTop();
+          var topWindow = topWindow * 1.5;
+          var windowHeight = $(window).height();
+          var position = topWindow / windowHeight;
+          position = 1 - position;
+        
+          $('#bottom').css('opacity', position);
+        
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.display = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginRight= "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+ 
+     $(window).on("scroll", function() {
+            if ($(this).scrollTop() > 10) {
+                $("nav.navbar").addClass("mybg-dark");
+                $("nav.navbar").addClass("navbar-shrink");
+              
+
+            } else {
+                $("nav.navbar").removeClass("mybg-dark");
+                $("nav.navbar").removeClass("navbar-shrink");
+               
+            }
+            
+      
+
+        });
+        
+        $(function() {
+  $('#bottom').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+
+
+</script>
+<script>
+    $(document).ready(function(){
+      $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+        });
+    });
+</script>
+    </body>
+  </html>
